@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : KHADHRAOUI  
+- PRÉNOM : YOUSSEF
+- GROUPE : B2
+- URL du site : https://lucky-khapse-2fa8e7.netlify.app
+- URL FIGMA : https://www.figma.com/design/012rUqAyju5mgt9oyVIPCV/Youssef-Khadhraoui_Projet-Solo?node-id=322-1210&t=MPc0WGDhovfv2KZF-1
