@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+.menu-toggle {
+    background: linear-gradient(to right, #1e1e1e, #003366);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-logo {
+    width: 40px;
+    height: auto;
+}
+
+.menu-close {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+    z-index: 999;
+    transition: left 0.5s ease;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #00bcd4;
+}
+
+.menu-flag {
+    width: 40px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.menu.active {
+    left: 0;
+}
+
+.menu-toggle .menu-close {
+    display: block;
+}

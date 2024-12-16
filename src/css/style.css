@@ -21,40 +21,42 @@ section {
     margin-bottom: 40px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Card Styles */
 .card {
-    background: linear-gradient(135deg, #222, #003366);
+    background: linear-gradient(to bottom, #1e1e1e, #003366);
     border-radius: 15px;
     padding: 20px;
-    width: 300px; 
+    width: 300px;
     margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    color: #ddd;
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-
-.card-icon {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
+/* Card Title */
 .card-title {
+    color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.card-text {
+/* Card Paragraph */
+.card p {
     font-size: 0.9rem;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 20px;
+    color: #bbb;
 }
 
-
+/* Button Styling */
 .card-button {
     display: inline-block;
     background: linear-gradient(to right, #00bcd4, #008ba3);
@@ -63,27 +65,22 @@ section {
     font-size: 0.9rem;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 25px;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 188, 212, 0.3), 
                 0 1px 3px rgba(0, 0, 0, 0.5);
-    outline: none;
-    border: none;
 }
 
 .card-button:hover {
     background: linear-gradient(to right, #008ba3, #006e82);
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 165, 187, 0.5);
-    color: #e0f7fa;
 }
 
 .card-button:active {
     transform: scale(0.98);
-    box-shadow: 0 2px 5px rgba(0, 165, 187, 0.5);
 }
-
 footer {
     margin-top: 40px;
     background-color: #1e1e1e;
