@@ -1,44 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    overflow-x: hidden;
-}
-
-
-.menu-toggle {
-    background: linear-gradient(to right, #1e1e1e, #003366);
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.menu-logo {
-    width: 40px;
-    height: auto;
-}
-
-.menu-close {
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-
 .menu {
     position: fixed;
     top: 0;
@@ -49,14 +8,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
     text-align: left;
-    z-index: 999;
+    padding: 20px;
     transition: left 0.5s ease;
+    z-index: 1000;
+}
+
+/* Active State */
+.menu.active {
+    left: 0;
 }
 
 .menu ul {
     list-style: none;
+    padding: 0;
 }
 
 .menu ul li {
@@ -74,19 +39,12 @@ body {
     color: #00bcd4;
 }
 
-.menu-flag {
-    width: 40px;
-    height: auto;
-    margin-top: 20px;
-    margin-left: 10px;
+/* Menu Close Button */
+.menu-close {
+    font-size: 2rem;
+    color: #fff;
     cursor: pointer;
-}
-
-
-.menu.active {
-    left: 0;
-}
-
-.menu-toggle .menu-close {
-    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }

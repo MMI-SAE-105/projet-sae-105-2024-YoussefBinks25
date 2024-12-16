@@ -4,43 +4,43 @@
     box-sizing: border-box;
 }
 
-
+/* Header Container */
 header {
-    background: linear-gradient(to right, #222, #003366); 
+    background: linear-gradient(to right, #222, #003366); /* Gradient background */
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between; /* Logo stays left, menu stays right */
     align-items: center;
     padding: 10px 20px;
-    position: relative; 
-    height: 70px;
+    position: relative; /* To position title absolutely */
+    height: 60px;
 }
 
-
+/* Logo and Title Container */
 .logo-container {
     display: flex;
-    align-items: center; 
-    gap: 10px; 
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between logo and title */
 }
 
-
+/* Logo */
 .logo {
-    height: 70px;
-    width: auto; 
+    height: 40px;
+    width: auto; /* Maintain aspect ratio */
 }
 
-
+/* Title (Centered Between Logo and Menu) */
 header h1 {
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    position: absolute; /* Absolute position relative to header */
+    left: 50%; /* Move to the center */
+    transform: translateX(-50%); /* Offset by half its own width */
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
-    white-space: nowrap; 
+    white-space: nowrap; /* Prevent wrapping */
     margin: 0;
 }
 
-
+/* Menu Button */
 .menu-toggle {
     background-color: #00bcd4;
     border: none;
