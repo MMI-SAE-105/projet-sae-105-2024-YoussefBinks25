@@ -1,13 +1,8 @@
 const menuToggle = document.getElementById("menu-toggle");
-const menuClose = document.getElementById("menu-close");
 const menu = document.getElementById("menu");
 
-// Open Menu
+// Toggle menu
 menuToggle.addEventListener("click", () => {
-    menu.classList.add("active");
+    menu.classList.toggle("active"); // Add or remove 'active' class
 });
 
-// Close Menu
-menuClose.addEventListener("click", () => {
-    menu.classList.remove("active");
-});
