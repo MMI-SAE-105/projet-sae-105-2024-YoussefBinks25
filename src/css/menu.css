@@ -1,4 +1,4 @@
-
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     overflow-x: hidden;
     background-color: #000;
     color: #fff;
 }
 
-
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo-container {
@@ -38,51 +39,59 @@ header {
 header h1 {
     margin-left: 10px;
     color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
+/* Menu Toggle Button */
 .menu-toggle {
-    background-color: #00bcd4;
+    background: linear-gradient(to right, #00bcd4, #008ba3);
     color: #fff;
     border: none;
     font-size: 1.5rem;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.3);
+    transition: all 0.3s ease;
 }
 
 .menu-toggle:hover {
-    background-color: #008ba3;
+    background: linear-gradient(to right, #008ba3, #006e82);
+    transform: scale(1.05);
 }
 
-
+/* Full-Screen Menu */
 .menu {
     position: fixed;
     top: 0;
     left: -100%; 
     width: 100%;
     height: 100vh;
-    background-color: #000;
+    background: linear-gradient(to bottom, #0b0e17, #001f3f);
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    transition: left 0.5s ease; 
+    transition: left 0.5s ease;
     z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu.active {
-    left: 0; 
+    left: 0; /* Slide-in effect */
 }
 
 .menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .menu-logo {
-    height: 50px;
+    height: 60px;
 }
 
 .menu-close {
@@ -91,35 +100,67 @@ header h1 {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.menu ul {
-    list-style: none;
-    flex: 1;
-}
-
-.menu ul li {
-    margin: 15px 0;
-}
-
-.menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.menu ul li a:hover {
+.menu-close:hover {
+    transform: rotate(90deg);
     color: #00bcd4;
 }
 
+/* Menu Items */
+.menu ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
 
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+    transform: translateX(10px);
+}
+
+/* Menu Footer */
 .menu-footer {
+    position: absolute;
+    bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.menu-footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu-footer a:hover {
+    color: #fff;
 }
 
 .menu-footer img {
-    width: 30px;
+    width: 35px;
     height: auto;
+    transition: transform 0.3s ease;
+}
+
+.menu-footer img:hover {
+    transform: scale(1.1);
 }
