@@ -4,13 +4,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article - Cerveau Artificiel</title>
     <link rel="stylesheet" href="/src/css/article.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
 </head>
-<body>
+<header>
+    <div class="logo-container">
+        <img src="/assets/img/Logo.png" alt="Logo" class="logo">
+        <h1>AI Evolution</h1>
+    </div>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+</header>
+<nav id="menu" class="menu">
+    <div class="menu-header">
+       
+        <button id="menu-close" class="menu-close">&times;</button>
+    </div>
+    <ul>
+        <li><a href="index.html">Cerveau Artificiel</a></li>
+        <li><a href="article.html">Article</a></li>
+        <li><a href="film.html">Ex Machina</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="livre.html">Superintelligence</a></li>
+        <li><a href="musique.html">Computer World</a></li>
+        <li><a href="frise.html">Frise</a></li>
+        <li><a href="autresprojets.html">Autres Projets</a></li>
+        <li><a href="glossaire.html">Glossaire</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+    </ul>
+    <div class="menu-footer">
+        <a href="contact.html">Contact</a>
+        <img src="assets/img/uk-flag.png" alt="English" class="menu-flag">
+    </div>
+</nav>
 
-    <!-- Main Container -->
     <main>
 
-        <!-- Section 1 -->
+       
         <section class="section">
             <h1>Fonctionnalités du Cerveau Artificiel</h1>
             <p>
@@ -18,7 +48,7 @@
                 Inspiré par la complexité et l’efficacité du cerveau humain, il permet de simuler des processus cognitifs 
                 tout en surpassant les limites biologiques.
             </p>
-            <img src="assets/img/brain-tech.jpg" alt="Technologie du Cerveau Artificiel">
+            <img src="/assets/img/Technologie du cerveau artificiel.png" alt="Technologie du Cerveau Artificiel">
             <ul>
                 <li><b>Apprentissage :</b> Capacité à apprendre de nouvelles informations et s’adapter à différents environnements.</li>
                 <li><b>Prise de Décision :</b> Capacité à analyser des données et prendre des décisions rapidement.</li>
@@ -26,7 +56,6 @@
             </ul>
         </section>
 
-        <!-- Section 2 -->
         <section class="section">
             <h1>Diagnostic Médical Assisté par l’IA</h1>
             <p>
@@ -34,25 +63,33 @@
                 la robotique et l’automatisation industrielle. Leur capacité à traiter de grandes quantités de 
                 données en temps réel ouvre des perspectives inédites.
             </p>
-            <img src="assets/img/medical-ai.jpg" alt="IA dans la Médecine">
+            <img src="/assets/img/ia dans la medecine.png" alt="IA dans la Médecine">
             <p>
                 Les algorithmes d’IA analysent les résultats d’examens médicaux pour aider les médecins à poser 
                 des diagnostics plus précis et rapides.
             </p>
         </section>
 
-        <!-- Section 3 -->
+     
         <section class="section">
             <h1>Robots Autonomes dans la Logistique et la Fabrication</h1>
             <p>
                 Ces robots utilisent des cerveaux artificiels pour optimiser les processus de production et de livraison, 
                 réduisant les erreurs et augmentant l’efficacité.
             </p>
-            <img src="assets/img/logistics-ai.jpg" alt="IA dans la Logistique">
-            <img src="assets/img/robot-factory.jpg" alt="Robots Autonomes en Fabrication">
+            <img src="/assets/img/Ia dans la logistique.png" alt="IA dans la Logistique">
+            
         </section>
 
-        <!-- Section 4 -->
+        <section class="section">
+            <h1>Robots autonomes dans la logistique et la fabrication :</h1>
+            <p>
+                Ces robots utilisent des cerveaux artificiels pour optimiser les processus de production et de livraison, réduisant les erreurs et augmentant l'efficacité.
+            </p>
+            <img src="/assets/img/Robots autonomes en fabrication.png" alt="Robots autonomes">
+            
+        </section>
+        
         <section class="section">
             <h1>Éthique et Cerveaux Artificiels</h1>
             <p>
@@ -60,13 +97,45 @@
                 Des préoccupations concernant la vie privée, le biais algorithmique et l’impact sur l’emploi 
                 sont au cœur des débats.
             </p>
-            <img src="assets/img/ai-ethics.jpg" alt="Éthique et IA">
+            <img src="/assets/img/ethique et ia.png" alt="Éthique et IA">
             <p>
                 Qui est responsable si une décision prise par une IA entraîne des conséquences négatives ?
             </p>
         </section>
 
     </main>
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-section">
+                <p>Youssef Khadhraoui</p>
+                <p>Groupe B2</p>
+            </div>
+    
+         
+            <div class="footer-section contact">
+                <h3>CONTACT</h3>
+                <p>youssef.khadhraoui@edu.univ-fcomte.fr</p>
+            </div>
+    
+            
+            <div class="footer-section">
+                <h3>NOUS SUIVRE</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/assets/img/instagram.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/img/X.jpg" alt="X"></a>
+                    <a href="#"><img src="/assets/img/facebook.jpg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    
+                <div class="footer-bottom">
+            <p>Projet réalisé dans le cadre d'un exercice pédagogique au département<br>
+            MMi de Montbéliard</p>
+        </div>
+    </footer>
+
+    <script src="/src/js/menu.js"></script>
 
 </body>
 </html>

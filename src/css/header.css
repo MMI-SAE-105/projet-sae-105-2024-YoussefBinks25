@@ -16,11 +16,14 @@ header {
 }
 
 
-.logo-container {
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
+
+.logo-container img {
+    height: 50px; 
+    width: auto; 
+    max-width: 100%; 
+    display: block; 
 }
+
 
 
 .logo {
