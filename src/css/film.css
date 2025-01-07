@@ -8,13 +8,22 @@ body {
   }
   
   h1, h2, h3, p, ul, li {
-    margin: 0;
+    font-family: 'Exo', sans-serif;
+    font-weight: 320;
+    margin: 10;
     padding: 0;
-  }
+}
+    p, blockquote {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 400; 
+        line-height: 1.6; 
+    }
+  
  
   header {
     background-color: #001f3f; 
     padding: 20px;
+    margin: 1;
     text-align: center;
   }
   
@@ -54,7 +63,7 @@ body {
   
   .menu ul {
     list-style: none;
-    padding: 20px;
+    padding: 10px;
   }
   
   .menu ul li {
@@ -62,7 +71,7 @@ body {
   }
   
   .menu ul li a {
-    color: #0af; 
+    color: rgb(255, 255, 255); 
     text-decoration: none;
   }
   
@@ -79,7 +88,7 @@ body {
   
 
   main {
-    margin: 20px auto; 
+    margin: 50px auto; 
     padding: 20px;
     max-width: 900px;
   }
@@ -101,14 +110,14 @@ body {
   .main-section .tags {
     display: flex;
     gap: 10px;
-    list-style: none; /* Supprime les puces (points) par défaut */
+    list-style: none; 
     padding: 0;
     margin: 0;
   }
   
   .main-section .tags li {
-    background-color: #333; /* Couleur de fond du tag */
-    color: #0af; /* Texte bleu clair */
+    background-color: #333; 
+    color: rgb(255, 255, 255); 
     padding: 5px 15px;
     border-radius: 20px;
     display: inline-block;
@@ -124,16 +133,42 @@ body {
 
   .quote-section {
     text-align: center;
-    margin: 40px 0;
-    font-style: italic;
-  }
-  
-  .quote-section blockquote {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #000; 
+    border-radius: 10px; 
+    color: #ddd; 
+    max-width: 600px; 
+}
+
+.quote-section blockquote {
     font-size: 1.5rem;
-    color: #ccc;
-  }
-  
- 
+    font-style: italic;
+    color: rgb(255, 255, 255); 
+    margin: 20px 0;
+}
+
+.quote-section p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 10px;
+}
+
+.quote-image {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quote-image-top {
+    margin-bottom: 20px; 
+    right: 80px;
+}
+
+.quote-image-bottom {
+    margin-top: 20px; 
+}
   .characters {
     text-align: center;
     margin: 40px 0;
@@ -141,7 +176,7 @@ body {
   
   .characters h2 {
     font-size: 2rem;
-    color: #0af;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
   
@@ -171,20 +206,29 @@ body {
  
   .director {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 100px 0;
+  }
+  
+  .director h2 {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px; 
   }
   
   .director img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 50px; 
   }
   
   .director p {
-    line-height: 1.5;
     font-size: 1rem;
+    color: #ddd;
+    text-align: center;
+    max-width: 600px; 
   }
   
  
@@ -207,7 +251,7 @@ body {
   
   .reception h2 {
     font-size: 2rem;
-    color: #0af;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
   
