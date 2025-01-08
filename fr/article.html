@@ -15,11 +15,10 @@
     </div>
     <button id="menu-toggle" class="menu-toggle">☰</button>
 </header>
+
+
 <nav id="menu" class="menu">
-    <div class="menu-header">
-       
-        <button id="menu-close" class="menu-close">&times;</button>
-    </div>
+    
     <ul>
         <li><a href="index.html">Cerveau Artificiel</a></li>
         <li><a href="article.html">Article</a></li>
@@ -34,12 +33,12 @@
     </ul>
     <div class="menu-footer">
         <a href="contact.html">Contact</a>
-        <img src="assets/img/uk-flag.png" alt="English" class="menu-flag">
+        <img src="/assets/img/ukflag.png" alt="English" class="menu-flag">
     </div>
 </nav>
 
+<main>
     <main>
-
        
         <section class="section">
             <h1>Fonctionnalités du Cerveau Artificiel</h1>
@@ -134,9 +133,13 @@
             MMi de Montbéliard</p>
         </div>
     </footer>
-
-
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+        
+    </script>
     <script src="/src/js/menu.js"></script>
-
+    <script src="/src/js/header.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,23 +16,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #1e1e1e, #003366);
+    width: 100%;
     padding: 10px 20px;
+    background: linear-gradient(to right, #001f3f, #0b0e17);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
     z-index: 1001;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 40px;
 }
 
 header h1 {
@@ -41,6 +30,11 @@ header h1 {
     color: #fff;
     font-size: 1.5rem;
     letter-spacing: 1px;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
 }
 
 /* Menu Toggle Button */
@@ -63,9 +57,9 @@ header h1 {
 
 /* Full-Screen Menu */
 .menu {
-    position: fixed;
+    position: fixed; /* Fixe le menu */
     top: 0;
-    left: -100%; 
+    left: -100%; /* Menu caché par défaut */
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, #0b0e17, #001f3f);
@@ -75,15 +69,16 @@ header h1 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    transition: left 0.5s ease;
-    z-index: 1000;
+    transition: left 0.5s ease; /* Transition fluide */
+    z-index: 1000; /* Inférieur au header */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu.active {
-    left: 0; /* Slide-in effect */
+    left: 0; /* Menu visible */
 }
 
+/* Menu Header */
 .menu-header {
     position: absolute;
     top: 20px;
@@ -92,21 +87,10 @@ header h1 {
 
 .menu-logo {
     height: 60px;
+    width: auto;
 }
 
-.menu-close {
-    font-size: 2rem;
-    background: none;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
 
-.menu-close:hover {
-    transform: rotate(90deg);
-    color: #00bcd4;
-}
 
 /* Menu Items */
 .menu ul {
@@ -125,11 +109,10 @@ header h1 {
     font-size: 1.8rem;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
 }
 
 .menu ul li a:hover {
-    color: #fff;
+    color: #100dce;
     transform: translateX(10px);
 }
 
@@ -148,7 +131,7 @@ header h1 {
     color: #00bcd4;
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.6s ease;
 }
 
 .menu-footer a:hover {
@@ -158,7 +141,7 @@ header h1 {
 .menu-footer img {
     width: 35px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .menu-footer img:hover {
