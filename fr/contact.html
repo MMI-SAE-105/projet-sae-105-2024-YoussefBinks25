@@ -1,14 +1,12 @@
-<!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superintelligence - Nick Bostrom</title>
-    <link rel="stylesheet" href="/src/css/livre.css">
+    <title>Article - Cerveau Artificiel</title>
+    <link rel="stylesheet" href="/src/css/contact.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
     <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/footer.css">
-    <link rel="stylesheet" href="/src/css/menu.css">
 </head>
 <header>
     <div class="logo-container">
@@ -38,58 +36,42 @@
         <img src="/assets/img/ukflag.png" alt="English" class="menu-flag">
     </div>
 </nav>
-<body>
-  
-    <div class="container">
 
-        
-        <section class="book-section">
-            <h1>Superintelligence : Paths, Dangers, Strategies</h1>
-            <p class="intro">
-                Le cerveau humain possède certaines capacités que les cerveaux des autres animaux n'ont pas.
-                C'est à ces capacités distinctives que notre espèce doit sa position dominante.
+<main>
+    <main>
+       
+        <section class="contact-section">
+            <h1>Contactez-nous</h1>
+            <p class="presentation">
+                Je suis Youssef Khadhraoui, étudiant en première année au département MMI (Métiers du Multimédia et de l'Internet) à Montbéliard. 
+                Ce site a été réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.
             </p>
-            <div class="book-details-container">
-                <div class="book-cover">
-                    <img src="/assets/img/Superintelligence.png" alt="Couverture du livre">
-                </div>
-                <div class="book-info">
-                    <p><strong>Auteur :</strong> Nick Bostrom</p>
-                    <p><strong>Publication :</strong> 3 juillet 2014</p>
-                    <p><strong>Genre :</strong> Non-fiction, Philosophie, Technologie, Futurisme</p>
-                </div>
-            </div>
-        </section>
-
-      
-        <section class="author-section">
-            <h2>Auteur</h2>
-            <div class="author-details">
-                <div class="author-photo">
-                    <img src="/assets/img/nickboston.png" alt="Photo de Nick Bostrom">
-                </div>
-                <div class="author-bio">
-                    <p>
-                        Nick Bostrom, un philosophe suédois de renom, professeur à l'Université d'Oxford et directeur
-                        du Future of Humanity Institute, est reconnu pour ses travaux pionniers sur les risques existentiels
-                        liés à l'intelligence artificielle.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-      
-        <section class="impact-section">
-            <h2>Impact Culturel</h2>
-            <p>
-                Le livre <em>Superintelligence : Paths, Dangers, Strategies</em> de Nick Bostrom a eu un impact culturel
-                significatif en sensibilisant le public aux risques associés à l'intelligence artificielle. En explorant les dangers
-                potentiels d'une IA superintelligente, il a influencé des figures majeures de la technologie, comme Elon Musk et
-                Bill Gates, qui ont cité l'ouvrage comme essentiel à leur réflexion sur le futur de la technologie.
+            <p class="instructions">
+                N'hésitez pas à me poser des questions ou à me transmettre des commentaires par e-mail en remplissant le formulaire ci-dessous !
             </p>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse mail</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
         </section>
-
-    </div>
+    </body>
+    </html>
+    </main>
     <footer>
         <div class="footer-container">
             
@@ -128,7 +110,5 @@
     </script>
     <script src="/src/js/menu.js"></script>
     <script src="/src/js/header.js"></script>
-
 </body>
-
 </html>
