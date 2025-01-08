@@ -24,7 +24,7 @@ main {
 h1, h2, h3 {
   font-family: 'Exo', sans-serif;
   font-weight: 400;
-  color: #00bcd4;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -42,32 +42,30 @@ h1, h2, h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Tags */
 .main-section .tags {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  list-style: none;
+  gap: 15px; 
+  list-style: none; 
   padding: 0;
 }
 
 .main-section .tags li {
-  background: linear-gradient(to right, #001f3f, #0b0e17);
+  display: flex;
+  align-items: center;
+  gap: 5px; 
   color: #fff;
-  padding: 8px 15px;
-  border-radius: 20px;
   font-size: 0.9rem;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
 }
 
-.main-section .tags li:hover {
-  transform: scale(1.1);
-  background: linear-gradient(to right, #00bcd4, #001f3f);
+.main-section .tags li::before {
+  content: "•"; 
+  color: #fff; 
+  font-size: 1.2rem; 
 }
 
-/* Movie Details Section */
+
 .details {
   text-align: center;
   margin: 30px auto;
@@ -78,11 +76,11 @@ h1, h2, h3 {
 }
 
 .p {
-  text-align: left; /* Aligne le texte à gauche */
-  color: #ddd; /* Couleur du texte */
-  line-height: 1.6; /* Améliore la lisibilité */
-  font-size: 1rem; /* Taille de la police */
-  margin: 10px 20px; /* Espacement */
+  text-align: left; 
+  color: #ddd; 
+  line-height: 1.6; 
+  font-size: 1rem; 
+  margin: 10px 20px; 
 }
 .quote-section {
   margin: 40px auto;
@@ -92,36 +90,56 @@ h1, h2, h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   color: #fff;
   max-width: 600px;
-  text-align: center;
+  display: flex; /* Active le mode flexbox */
+  flex-direction: column; /* Les éléments sont en colonne */
+  align-items: center; /* Centre les éléments horizontalement */
 }
-
 .quote-section blockquote {
   font-size: 1.5rem;
   font-style: italic;
-  margin: 20px 0;
+  margin: 60px 0;
+  text-align: center; /* Garde les citations centrées */
 }
 
 .quote-section p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6;
+  text-align: justify;
+  margin-top: 10px; /* Ajoute de l'espace entre le texte et l'image */
+}
+.quote-section img {
+  max-width: 100px; 
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0; 
 }
 
-/* Characters Section */
+
+.quote-section .img-right {
+  float: right; /* Place Ava à droite */
+  margin-left: 15px; /* Écart entre l'image et le texte */
+}
+
+.quote-section .img-left {
+  float: left; /* Place Caleb à gauche */
+  margin-right: 15px; /* Écart entre l'image et le texte */
+}
+
 .characters {
   text-align: center;
-  margin: 40px 0;
+  margin: 160px 0;
 }
 
 .characters h2 {
   font-size: 2rem;
-  color: #00bcd4;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .carousel {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -130,8 +148,8 @@ h1, h2, h3 {
 }
 
 .character img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
@@ -148,63 +166,66 @@ h1, h2, h3 {
   color: #fff;
 }
 
-/* Director Section */
 .director {
   text-align: center;
-  margin: 50px 0;
+  margin: 0px 0; 
 }
 
 .director h2 {
   font-size: 1.8rem;
-  color: #00bcd4;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
-.director img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+.director-section  {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  margin-bottom: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
 }
 
 .director p {
   font-size: 1rem;
   color: #ddd;
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: justify;
+  margin-left: 15px;
+  max-width: 650px;
+  text-align: left;
 }
 
-/* Trailer Section */
 .trailer {
   text-align: center;
   margin: 50px 0;
 }
 
 .trailer iframe {
-  width: 100%;
-  max-width: 800px;
-  height: 450px;
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
   border-radius: 10px;
-  border: none;
+  border-radius: 20;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 
 .reception {
-  margin: 70px 0;
+  margin: 70px 20px;
 }
 
 .reception h2 {
   font-size: 2rem;
-  color: #00bcd4;
-  margin-bottom: 20px;
+  color: #fdfdfd;
+  margin-bottom: 30px;
+  text-align: left; 
+  margin-left: 20px; 
 }
 
 .reception p {
   line-height: 1.6;
   font-size: 1rem;
   color: #ddd;
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 800px;
+  text-align: left; 
+  margin-left: 20px; 
 }
