@@ -1,0 +1,122 @@
+body {
+    font-family: 'Exo 2', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+
+.timeline {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0 20px; /* Augmenté pour créer plus d'espace */
+}
+
+.timeline-header {
+    text-align: center;
+    margin-bottom: 100px; /* Plus d'espace entre le header et la frise */
+}
+
+.timeline-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.timeline-header p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 50px;
+    border-left: 2px solid #fff;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content {
+    background: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+    max-width: 400px;
+}
+
+.timeline-content.left {
+    margin-left: -450px;
+}
+
+.timeline-content.right {
+    margin-left: 20px;
+}
+
+.timeline-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #00bcd4;
+    box-shadow: 0 4px 8px rgba(0, 188, 212, 0.5);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -70px;
+    top: 20px;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-left: 20px;
+    }
+
+    .timeline-content.left,
+    .timeline-content.right {
+        margin-left: 0;
+    }
+
+    .timeline-date {
+        left: -35px;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+    }
+}
