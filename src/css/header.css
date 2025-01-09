@@ -49,3 +49,23 @@ header h1 {
     background-color: #007a8e; /* Changement de couleur */
     transform: scale(1.05); /* Effet d'agrandissement */
 }
+
+/* Conteneur pour le bouton menu et le drapeau */
+.menu-controls {
+    display: flex;
+    align-items: center; /* Aligne verticalement les éléments */
+    gap: 10px; /* Espace entre le bouton et le drapeau */
+}
+
+/* Style pour le drapeau */
+.language-flag {
+    height: 15px; /* Taille adaptée */
+    width: auto; /* Conserve les proportions */
+    cursor: pointer; /* Rend le drapeau cliquable */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Effet fluide */
+}
+
+.language-flag:hover {
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+    opacity: 0.8; /* Légère transparence au survol */
+}
